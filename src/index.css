@@ -16,15 +16,47 @@ a {
   text-decoration: none;
 }
 
+#root {
+  height: 100svh;
+
+  display:flex;
+  flex-direction: column;
+}
+
 /* header */
 
 .header {
   padding: 10px 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__link:hover{
+  text-decoration: underline;
+}
+
+/* Main */
+
+.main {
+  padding: 20px;
+  margin: 0 10px 10px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, green, black);
+  flex: 1;
+}
+
+.item-list__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.item-list__link{
+  text-decoration: none;
+}
+
+.item-list__link:hover{
   text-decoration: underline;
 }
