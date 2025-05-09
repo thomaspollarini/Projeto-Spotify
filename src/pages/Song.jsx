@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Player from '../components/Player'
 
 const Song = () => {
   return (
@@ -10,10 +12,10 @@ const Song = () => {
       </div>
 
       <div className="song__bar">
-        <div className='song__artist-image'>
+        <Link to="/artist/1" className='song__artist-image'>
           <img src="" alt="Imagem do Artista" />
-        </div>
-        {/*player */}
+        </Link>
+        <Player />
         <div>
           <p className='song__name'>{/*Name */}</p>
           <p>{/*artist */}</p>
