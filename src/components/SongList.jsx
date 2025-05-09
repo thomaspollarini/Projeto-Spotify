@@ -5,6 +5,8 @@ const SongList = () => {
   return (
     <div className='song-list'>
         <SongItem />
+
+        <p className='song-list__see-more'>Ver mais</p>
     </div>
   )
 }
