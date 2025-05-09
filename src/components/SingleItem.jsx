@@ -2,21 +2,23 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 
-const SingleItem = () => {
+const SingleItem = ({id, name, image, banner, artist, idPath}) => {
   return (
-    <div className="single-item">
+    <a href={`${idPath}/${id}`} className="single-item">
       <div className="single-item__div-image-button">
         <div className="single-item__div-image">
-          <img className="single-item__image" src="" alt="" />
+          <img className="single-item__image" src={image} alt={`Imagem do Artista: ${artist}`} />
         </div>
         <FontAwesomeIcon className="single-item_icon" icon={faCirclePlay} />
       </div>
 
       <div className="single-item__texts">
-        <p className="single-item_title">Nome</p>
-        <p className="single-item_type">artista/musica</p>
+        <div className="single-item__2lines">
+            <p className="single-item_title">{name}</p>
+        </div>
+        <p className="single-item_type">{artist ?? "Artista"}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
