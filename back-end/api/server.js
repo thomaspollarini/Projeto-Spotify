@@ -1,8 +1,11 @@
 import express from "express";
+import cors from "cors";
 import { db } from "./connect.js";
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Só vamos trabalhar com os endpoints '/artists' e '/songs'");
