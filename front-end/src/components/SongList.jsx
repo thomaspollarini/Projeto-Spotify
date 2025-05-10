@@ -1,9 +1,20 @@
 import React from "react";
 import SongItem from "./SongItem";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const SongList = ({ songsArray }) => {
+  const seeMoreRef = useRef();
   const [items, setItems] = useState(5);
+
+  const seeMoreLess = () => {
+    if (items === 5) {
+      setItems(10);
+      seeMoreRef.current.innerText = "Ver menos";
+    } else {
+      setItems(5);
+      seeMoreRef.current.innerText = "Ver mais";
+    }
+  }
 
   return (
     <div className="song-list">
@@ -14,27 +25,13 @@ const SongList = ({ songsArray }) => {
         ))}
 
       <p
+        ref={seeMoreRef}
         className="song-list__see-more"
         onClick={() => {
-          setItems(items + 5);
-          document.querySelector(".song-list__see-more").style.display = "none";
-          document.querySelector(".song-list__see-less").style.display =
-            "block";
+          seeMoreLess();
         }}
       >
         Ver mais
-      </p>
-
-      <p
-        className="song-list__see-less"
-        onClick={() => {
-          setItems(items - 5);
-          document.querySelector(".song-list__see-less").style.display = "none";
-          document.querySelector(".song-list__see-more").style.display =
-            "block";
-        }}
-      >
-        Ver menos
       </p>
     </div>
   );
