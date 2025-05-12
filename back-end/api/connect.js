@@ -1,8 +1,9 @@
 import { MongoClient } from "mongodb";
+import dotenv from "dotenv";
 
-// remember to put your connection string
-const URI = "mongodb+srv://<db-user>:<db-password>@cluster0.fose7jc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+dotenv.config(); // Carrega as variáveis do .env
+
+const URI = process.env.MONGODB_URI;
 
 const client = new MongoClient(URI);
-
 export const db = client.db("spotify");
