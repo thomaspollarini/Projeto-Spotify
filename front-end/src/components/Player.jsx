@@ -69,11 +69,11 @@ const Player = ({ audio, duration, randomIdFromArtist }) => {
         </Link>
       </div>
       <div className="player__progress">
-        <p>{currentTime}</p>
+        <p className="player__time">{currentTime}</p>
         <div className="player__bar">
           <div ref={progressBar} className="player__bar-progress"></div>
         </div>
-        <p>{duration}</p>
+        <p className="player__time">{duration}</p>
       </div>
 
       <audio ref={audioPlayer} src={audio}></audio>
