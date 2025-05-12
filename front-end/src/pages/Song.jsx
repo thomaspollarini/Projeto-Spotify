@@ -23,7 +23,7 @@ const Song = () => {
 
   return (
     <div className="song">
-      <div className="song__containter">
+      <div className="song__container">
         <div className="song__image-container">
           <img src={songObj.image} alt={`Imagem da Música: ${songObj.name}`} />
         </div>
