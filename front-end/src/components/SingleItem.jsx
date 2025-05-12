@@ -10,12 +10,12 @@ const SingleItem = ({_id, name, image, banner, artist, idPath}) => {
         <div className="single-item__div-image">
           <img className="single-item__image" src={image} alt={`Imagem do Artista: ${artist}`} />
         </div>
-        <FontAwesomeIcon className="single-item_icon" icon={faCirclePlay} />
+        <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
       </div>
 
       <div className="single-item__texts">
         <div className="single-item__2lines">
-            <p className="single-item_title">{name}</p>
+            <p className="single-item__title">{name}</p>
         </div>
         <p className="single-item_type">{artist ?? "Artista"}</p>
       </div>
