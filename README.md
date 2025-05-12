@@ -4,6 +4,17 @@ Este projeto é uma aplicação **fullstack** inspirada na interface e funcional
 
 ---
 
+## 🔗 Visualização do projeto
+
+Você pode acessar a aplicação online pelo seguinte link:
+
+👉 [https://projeto-spotify-clone.onrender.com/](https://projeto-spotify-clone.onrender.com/)
+
+> ⚠️ **Observação:** como o projeto está hospedado em uma plataforma com servidores gratuitos (*Render*), o tempo de inicialização pode ser mais lento.  
+> Pode ser necessário **aguardar alguns minutos** para o carregamento completo da aplicação e, em alguns casos, **recarregar a página**.
+
+---
+
 ## 💡 Sobre o projeto
 
 A aplicação simula uma plataforma de streaming de músicas, com páginas de navegação, listagem de faixas, player e integração com um backend.  
