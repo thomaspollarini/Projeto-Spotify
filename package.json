@@ -1,0 +1,21 @@
+{
+  "name": "projeto-spotify",
+  "version": "1.0.0",
+  "description": "Este projeto é uma aplicação **fullstack** inspirada na interface e funcionalidades básicas do **Spotify**, desenvolvida com o objetivo de praticar e consolidar conhecimentos em **desenvolvimento web moderno**, tanto no front-end quanto no back-end.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
+    "start": "npm run build --prefix back-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaspollarini/Projeto-Spotify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomaspollarini/Projeto-Spotify/issues"
+  },
+  "homepage": "https://github.com/thomaspollarini/Projeto-Spotify#readme"
+}
