@@ -105,7 +105,7 @@ img {
 
 .item-list__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
 }
 
 .item-list__link {
