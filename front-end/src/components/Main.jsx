@@ -9,7 +9,7 @@ const Main = ({type}) => {
       {/* Lista de artistas */}
       {type === "artists" || type === undefined ? <ItemList
         title="Artistas"
-        items={5}
+        items={12}
         itemsArray={artistArray}
         path="/artists"
         idPath="/artist"
@@ -18,7 +18,7 @@ const Main = ({type}) => {
       {/* Lista de músicas */}
       {type === "songs" || type === undefined  ? <ItemList
         title="Músicas"
-        items={10}
+        items={24}
         itemsArray={songsArray}
         path="/songs"
         idPath="/song"
