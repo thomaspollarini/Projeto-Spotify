@@ -8,7 +8,7 @@ Este projeto é uma aplicação **fullstack** inspirada na interface e funcional
 
 Você pode acessar a aplicação online pelo seguinte link:
 
-👉 [https://projeto-spotify-clone.onrender.com/](https://projeto-spotify-clone.onrender.com/)
+👉 [Projeto Spotify Clone](https://projeto-spotify-clone.onrender.com/)
 
 > ⚠️ **Observação:** como o projeto está hospedado em uma plataforma com servidores gratuitos (*Render*), o tempo de inicialização pode ser mais lento.  
 > Pode ser necessário **aguardar alguns minutos** para o carregamento completo da aplicação e, em alguns casos, **recarregar a página**.
