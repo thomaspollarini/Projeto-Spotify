@@ -61,7 +61,7 @@ const Player = ({ audio, duration, randomIdFromArtist }) => {
   return (
     <div className="player">
       <div className="player__controllers">
-        <Link to={`/song/${randomIdFromArtist}`} onclick={() => changeSong()}>
+        <Link to={`/song/${randomIdFromArtist}`} onClick={() => changeSong()}>
           <FontAwesomeIcon icon={faBackwardStep} className="player__icon" />
         </Link>
         <FontAwesomeIcon
@@ -71,7 +71,7 @@ const Player = ({ audio, duration, randomIdFromArtist }) => {
             playPause();
           }}
         />
-        <Link to={`/song/${randomIdFromArtist}`} onclick={() => changeSong()}>
+        <Link to={`/song/${randomIdFromArtist}`} onClick={() => changeSong()}>
           <FontAwesomeIcon icon={faForwardStep} className="player__icon" />
         </Link>
       </div>
