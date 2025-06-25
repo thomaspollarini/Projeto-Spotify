@@ -31,10 +31,17 @@ const Player = ({ audio, duration, randomIdFromArtist }) => {
   const [currentTime, setCurrentTime] = useState(formatTime(0));
   const durationInSeconds = timeInSeconds(duration);
 
-
   const playPause = () => {
     isPlaying ? audioPlayer.current.pause() : audioPlayer.current.play();
     setIsPlaying(!isPlaying);
+  };
+
+  const changeSong = () => {
+    audioPlayer.current.pause();
+    audioPlayer.current.currentTime = 0;
+    setIsPlaying(false);
+    setCurrentTime(formatTime(0));
+    progressBar.current.style.setProperty("--_progress", "0%");
   };
 
   useEffect(() => {
@@ -54,7 +61,7 @@ const Player = ({ audio, duration, randomIdFromArtist }) => {
   return (
     <div className="player">
       <div className="player__controllers">
-        <Link to={`/song/${randomIdFromArtist}`}>
+        <Link to={`/song/${randomIdFromArtist}`} onclick={() => changeSong()}>
           <FontAwesomeIcon icon={faBackwardStep} className="player__icon" />
         </Link>
         <FontAwesomeIcon
@@ -64,7 +71,7 @@ const Player = ({ audio, duration, randomIdFromArtist }) => {
             playPause();
           }}
         />
-        <Link to={`/song/${randomIdFromArtist}`}>
+        <Link to={`/song/${randomIdFromArtist}`} onclick={() => changeSong()}>
           <FontAwesomeIcon icon={faForwardStep} className="player__icon" />
         </Link>
       </div>
